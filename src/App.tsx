@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import { FONTS, usePreloadFonts } from './use-fonts';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -20,9 +20,9 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
         <div style={{ margin: '1em auto', maxHeight: 200, minWidth: '100%', overflow: 'auto' }}>
-          {FONTS.map((font) => <h3 style={{ fontFamily: font }}>{font}</h3>)}
+          {FONTS.map((font, index) => <h3 key={index} style={{ fontFamily: font }}>{font}</h3>)}
         </div>
       </header>
     </div>

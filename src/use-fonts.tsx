@@ -4,18 +4,18 @@ import WebFontLoader from "webfontloader";
 export const FONTS = [
   "Roboto",
   "Anton",
-  // "Montserrat",
-  // "Josefin Sans",
-  // "Raleway",
-  // "Bree Serif",
-  // "Merriweather",
-  // "DM Serif Text",
-  // "Roboto Mono",
-  // "Playfair Display",
-  // "Noto Sans SC",
-  // "Noto Sans KR",
-  // "Arial",
-  // "Arial Black"
+  "Montserrat",
+  "Josefin Sans",
+  "Raleway",
+  "Bree Serif",
+  "Merriweather",
+  "DM Serif Text",
+  "Roboto Mono",
+  "Playfair Display",
+  "Noto Sans SC",
+  "Noto Sans KR",
+  "Arial",
+  "Arial Black"
 ];
 
 export const usePreloadFonts = () => {
