@@ -23,6 +23,8 @@ function App() {
         </a> */}
         <div style={{ margin: '1em auto', maxHeight: 200, minWidth: '100%', overflow: 'auto' }}>
           {FONTS.map((font, index) => <h3 key={index} style={{ fontFamily: font }}>{font}</h3>)}
+          <h3 style={{ fontFamily: "Arial" }}>Arial (local)</h3>
+          <h3 style={{ fontFamily: "Arial Black" }}>Arial Black (local)</h3>
         </div>
       </header>
     </div>
