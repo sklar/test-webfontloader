@@ -14,8 +14,8 @@ export const FONTS = [
   "Playfair Display",
   "Noto Sans SC",
   "Noto Sans KR",
-  "Arial",
-  "Arial Black"
+  // "Arial",
+  // "Arial Black"
 ];
 
 export const usePreloadFonts = () => {
