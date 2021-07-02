@@ -1,8 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import logo from './logo.svg';
+import { FONTS, usePreloadFonts } from './use-fonts';
 
 function App() {
+  usePreloadFonts();
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +21,9 @@ function App() {
         >
           Learn React
         </a>
+        <div style={{ margin: '1em auto', maxHeight: 200, minWidth: '100%', overflow: 'auto' }}>
+          {FONTS.map((font) => <h3 style={{ fontFamily: font }}>{font}</h3>)}
+        </div>
       </header>
     </div>
   );
