@@ -1,22 +1,23 @@
-import { useEffect } from "react";
-import WebFontLoader from "webfontloader";
+import { useEffect } from 'react';
+import WebFontLoader from 'webfontloader';
 
-export const FONTS = [
-  "Roboto",
-  "Anton",
-  "Montserrat",
-  "Josefin Sans",
-  "Raleway",
-  "Bree Serif",
-  "Merriweather",
-  "DM Serif Text",
-  "Roboto Mono",
-  "Playfair Display",
-  "Noto Sans SC",
-  "Noto Sans KR",
-  "Arial",
-  "Arial Black"
+const GOOGLE_FONTS = [
+  'Roboto',
+  'Anton',
+  'Montserrat',
+  'Josefin Sans',
+  'Raleway',
+  'Bree Serif',
+  'Merriweather',
+  'DM Serif Text',
+  'Roboto Mono',
+  'Playfair Display',
+  'Noto Sans SC',
+  'Noto Sans KR',
 ];
+const LOCAL_FONTS = ['Arial', 'Arial Black'];
+
+export const FONTS = [...GOOGLE_FONTS, ...LOCAL_FONTS];
 
 export const usePreloadFonts = () => {
   useEffect(() => {
@@ -24,8 +25,8 @@ export const usePreloadFonts = () => {
       WebFontLoader.load({
         google: {
           // api: "https://fonts.googleapis.com/css2",
-          families: FONTS
-        }
+          families: GOOGLE_FONTS,
+        },
       });
     })();
   }, []);
